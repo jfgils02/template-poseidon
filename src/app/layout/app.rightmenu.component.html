@@ -1,0 +1,162 @@
+<p-sidebar
+    [(visible)]="rightMenuActive"
+    [position]="'right'"
+    [baseZIndex]="1000"
+    [transitionOptions]="'.3s cubic-bezier(0, 0, 0.2, 1)'"
+>
+    <ng-template pTemplate="headless">
+        <div class="h-full py-4 px-3 pr-0">
+            <div>
+                <h5 class="mt-5 mx-3 mb-2 text-color opacity-80">
+                    Your Tasks Today
+                </h5>
+                <ul class="py-5 m-0 p-0 list-none">
+                    <li class="flex py-2 px-4">
+                        <p-checkbox
+                            [binary]="true"
+                            [(ngModel)]="checked1"
+                        ></p-checkbox>
+                        <div class="ml-3">
+                            <h6
+                                class="m-0 text-color"
+                                [ngClass]="{ 'line-through': checked1 }"
+                            >
+                                Sales reports
+                            </h6>
+                            <span class="block text-sm text-color opacity-50"
+                                >Today</span
+                            >
+                        </div>
+                    </li>
+                    <li class="flex py-2 px-4">
+                        <p-checkbox
+                            [binary]="true"
+                            [(ngModel)]="checked2"
+                        ></p-checkbox>
+                        <div class="ml-3">
+                            <h6
+                                class="m-0 text-color"
+                                [ngClass]="{ 'line-through': checked2 }"
+                            >
+                                Pay invoices
+                            </h6>
+                            <span class="block text-sm text-color opacity-50"
+                                >Today</span
+                            >
+                        </div>
+                    </li>
+                    <li class="flex py-2 px-4">
+                        <p-checkbox
+                            [binary]="true"
+                            [(ngModel)]="checked3"
+                        ></p-checkbox>
+                        <div class="ml-3">
+                            <h6
+                                class="m-0 text-color"
+                                [ngClass]="{ 'line-through': checked3 }"
+                            >
+                                Dinner with Tony
+                            </h6>
+                            <span class="block text-sm text-color opacity-50"
+                                >Today, 22:36</span
+                            >
+                        </div>
+                    </li>
+                    <li class="flex py-2 px-4">
+                        <p-checkbox
+                            [binary]="true"
+                            [(ngModel)]="checked4"
+                        ></p-checkbox>
+                        <div class="ml-3">
+                            <h6
+                                class="m-0 text-color"
+                                [ngClass]="{ 'line-through': checked4 }"
+                            >
+                                Client meeting
+                            </h6>
+                            <span class="block text-sm text-color opacity-50"
+                                >Today</span
+                            >
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <hr />
+
+            <div>
+                <h5 class="mt-5 mx-3 mb-2 text-color opacity-80">Upcoming</h5>
+                <ul class="py-5 m-0 p-0 list-none">
+                    <li class="flex py-2 px-4">
+                        <p-checkbox
+                            [binary]="true"
+                            [(ngModel)]="checked5"
+                        ></p-checkbox>
+                        <div class="ml-3">
+                            <h6
+                                class="m-0 text-color"
+                                [ngClass]="{ 'line-through': checked5 }"
+                            >
+                                New representative meeting
+                            </h6>
+                            <span class="block text-sm text-color opacity-50"
+                                >27 May</span
+                            >
+                        </div>
+                    </li>
+                    <li class="flex py-2 px-4">
+                        <p-checkbox
+                            [binary]="true"
+                            [(ngModel)]="checked6"
+                        ></p-checkbox>
+                        <div class="ml-3">
+                            <h6
+                                class="m-0 text-color"
+                                [ngClass]="{ 'line-through': checked6 }"
+                            >
+                                Flight tickets
+                            </h6>
+                            <span class="block text-sm text-color opacity-50"
+                                >28 May</span
+                            >
+                        </div>
+                    </li>
+                    <li class="flex py-2 px-4">
+                        <p-checkbox
+                            [binary]="true"
+                            [(ngModel)]="checked7"
+                        ></p-checkbox>
+                        <div class="ml-3">
+                            <h6
+                                class="m-0 text-color"
+                                [ngClass]="{ 'line-through': checked7 }"
+                            >
+                                Generate charts
+                            </h6>
+                            <span class="block text-sm text-color opacity-50"
+                                >29 May</span
+                            >
+                        </div>
+                    </li>
+                    <li class="flex py-2 px-4">
+                        <p-checkbox
+                            [binary]="true"
+                            [(ngModel)]="checked8"
+                        ></p-checkbox>
+                        <div class="ml-3">
+                            <h6
+                                class="m-0 text-color"
+                                [ngClass]="{ 'line-through': checked8 }"
+                            >
+                                Delete old files
+                            </h6>
+                            <span class="block text-sm text-color opacity-50"
+                                >30 May</span
+                            >
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </ng-template>
+</p-sidebar>
